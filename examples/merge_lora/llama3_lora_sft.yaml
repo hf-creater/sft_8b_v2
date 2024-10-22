@@ -1,0 +1,13 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: ../autodl-tmp/2b_sft_model
+adapter_name_or_path: saves/sft_8b_v2/lora/sft
+template: cpm
+finetuning_type: lora
+
+### export
+export_dir: models/fm9g_lora_sft
+export_size: 2
+export_device: cpu
+export_legacy_format: false
